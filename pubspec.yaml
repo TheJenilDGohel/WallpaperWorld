@@ -38,7 +38,9 @@ dependencies:
   google_fonts: ^3.0.1
   http: ^0.13.4
   flutter_launcher_icons: ^0.9.3
-
+  flutter_wallpaper_manager: ^0.0.3
+  flutter_cache_manager: ^3.3.0
+  
 flutter_icons:
   android: "launcher_icon"
   ios: true
