@@ -42,9 +42,8 @@ class _SearchPageState extends State<SearchPage> {
   @override
   void initState() {
     getSearchedWallpapers(widget.searchQuery);
-    super.initState();
-
     searchController.text = widget.searchQuery;
+    super.initState();
   }
 
   @override
@@ -77,7 +76,9 @@ class _SearchPageState extends State<SearchPage> {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      getSearchedWallpapers(searchController.text);
+                    },
                     child: Icon(
                       CupertinoIcons.search,
                     ),
